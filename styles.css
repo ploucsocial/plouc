@@ -22,9 +22,8 @@ body {
 }
 
 .logo {
-  width: 560px;
-  max-width: 88%;
-  display: block;
+  width: 320px;
+  max-width: 90%;
   margin: 0 auto 10px;
 }
 
