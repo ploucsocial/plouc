@@ -162,4 +162,92 @@ footer a {
   .button {
     font-size: 20px;
   }
+  .how-section {
+  padding: 80px 7vw 100px;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.how-section h2 {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--pink);
+  font-size: clamp(36px, 4vw, 58px);
+  margin: 0 0 28px;
+}
+
+.how-subtitle {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--pink);
+  font-size: clamp(24px, 3vw, 42px);
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 850px;
+  margin: 0 auto 70px;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+  align-items: end;
+}
+
+.how-card {
+  position: relative;
+}
+
+.how-card img {
+  width: 100%;
+  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+
+.bubble {
+  position: absolute;
+  background: var(--pink);
+  color: #000;
+  border: 4px solid #000;
+  border-radius: 32px;
+  padding: 16px 20px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 260px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.bubble-one {
+  top: 70px;
+  right: -38px;
+}
+
+.bubble-two {
+  bottom: 100px;
+  left: -42px;
+}
+
+.bubble-three {
+  top: 90px;
+  left: -48px;
+}
+
+@media (max-width: 900px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .bubble {
+    position: static;
+    margin: 18px auto 0;
+    max-width: 320px;
+  }
+
+  .how-card img {
+    max-width: 260px;
+  }
+}
 }
