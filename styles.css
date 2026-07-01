@@ -88,81 +88,11 @@ h1 {
   font-family: Inter, Arial, sans-serif;
   font-size: clamp(18px, 1.7vw, 22px);
   font-weight: 700;
-  transition: 0.25s ease;
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(245, 172, 200, 0.35);
-}
+/* HOW IT WORKS */
 
-.section {
-  padding: 80px 8vw;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: clamp(30px, 3.4vw, 46px);
-}
-
-.section p {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--muted);
-}
-
-footer {
-  padding: 30px;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: Inter, Arial, sans-serif;
-}
-
-footer a {
-  color: var(--ink);
-}
-
-@media (max-width: 800px) {
-  .hero {
-    padding: 18px 24px 40px;
-  }
-
-  .logo {
-    display: block;
-    width: 280px;
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto 12px;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
-
-  h1 {
-    font-size: clamp(30px, 9vw, 40px);
-    margin: 14px 0 24px;
-  }
-
-  .message h2 {
-    font-size: clamp(26px, 8vw, 36px);
-    margin: 30px 0 24px;
-  }
-
-  .photo-left,
-  .photo-right {
-    max-height: none;
-  }
-
-  .button {
-    font-size: 20px;
-  }
-  .how-section {
+.how-section {
   padding: 80px 7vw 100px;
   text-align: center;
   max-width: 1400px;
@@ -170,10 +100,8 @@ footer a {
 }
 
 .how-section h2 {
-  font-family: "Fraunces", Georgia, serif;
-  color: var(--pink);
   font-size: clamp(36px, 4vw, 58px);
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 }
 
 .how-subtitle {
@@ -183,7 +111,7 @@ footer a {
   font-weight: 700;
   line-height: 1.25;
   max-width: 850px;
-  margin: 0 auto 70px;
+  margin: 0 auto 60px;
 }
 
 .how-steps {
@@ -216,7 +144,6 @@ footer a {
   font-weight: 700;
   line-height: 1.25;
   max-width: 260px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
 .bubble-one {
@@ -234,10 +161,67 @@ footer a {
   left: -48px;
 }
 
+footer {
+  padding: 30px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Inter, Arial, sans-serif;
+}
+
+footer a {
+  color: var(--ink);
+}
+
+/* MOBILE */
+
 @media (max-width: 900px) {
+  .hero {
+    padding: 18px 24px 40px;
+  }
+
+  .logo {
+    width: 280px;
+    max-width: 90%;
+    margin: 0 auto 12px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  h1 {
+    font-size: clamp(30px, 9vw, 40px);
+    margin: 14px 0 24px;
+  }
+
+  .message h2 {
+    font-size: clamp(26px, 8vw, 36px);
+    margin: 30px 0 24px;
+  }
+
+  .photo-left,
+  .photo-right {
+    max-height: none;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .how-section {
+    padding: 70px 24px 90px;
+  }
+
   .how-steps {
     grid-template-columns: 1fr;
     gap: 70px;
+  }
+
+  .how-card img {
+    max-width: 260px;
   }
 
   .bubble {
@@ -245,9 +229,4 @@ footer a {
     margin: 18px auto 0;
     max-width: 320px;
   }
-
-  .how-card img {
-    max-width: 260px;
-  }
-}
 }
