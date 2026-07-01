@@ -19,11 +19,15 @@ body {
 .hero {
   min-height: 100vh;
   padding: 10px 7vw 30px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
+  display: block;
   width: 320px;
   max-width: 90%;
+  height: auto;
   margin: 0 auto 10px;
 }
 
@@ -43,13 +47,9 @@ h2 {
 }
 
 h1 {
-    font-family: "Fraunces", Georgia, serif;
-    font-size: clamp(30px, 3vw, 42px);
-
-    text-align: center;
-
-    margin: 12px 0 34px;
-
+  font-size: clamp(30px, 3vw, 42px);
+  text-align: center;
+  margin: 12px 0 34px;
 }
 
 .message h2 {
@@ -128,12 +128,14 @@ footer a {
 
 @media (max-width: 800px) {
   .hero {
-    padding: 24px 24px 40px;
+    padding: 18px 24px 40px;
   }
 
   .logo {
-    width: 320px;
+    display: block;
+    width: 280px;
     max-width: 90%;
+    height: auto;
     margin: 0 auto 12px;
   }
 
