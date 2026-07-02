@@ -170,8 +170,9 @@ h1 {
 }
 
 .bubble-three {
-  top: 100px;
-  left: -75px;
+  top: 235px;
+  left: -115px;
+  max-width: 300px;
 }
 
 footer {
